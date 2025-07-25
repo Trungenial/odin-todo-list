@@ -1,0 +1,23 @@
+{
+    "name": "odin-todo-list",
+    "version": "1.0.0",
+    "description": "",
+    "private": true,
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Trungenial/odin-todo-list.git"
+    },
+    "author": "Trungenial",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Trungenial/odin-todo-list/issues"
+    },
+    "homepage": "https://github.com/Trungenial/odin-todo-list#readme",
+    "devDependencies": {
+        "webpack": "^5.100.2",
+        "webpack-cli": "^6.0.1"
+    }
+}
