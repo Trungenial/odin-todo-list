@@ -1,0 +1,50 @@
+:root {
+    --homepage: #2476de;
+    --nomal-text: white;
+    --add-task: rgb(168, 199, 250);
+    --background: #1b1b1b;
+    --list-background: rgba(0, 0, 0, 0.87);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Product Sans", Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--nomal-text);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-side {
+    display: flex;
+    align-items: center;
+}
+
+.return-homepage {
+    display: flex;
+    align-items: center;
+    color: var(--nomal-text);
+    text-decoration: none;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    column-gap: 100px;
+}
+
+.list-head {
+    display: flex;
+}
