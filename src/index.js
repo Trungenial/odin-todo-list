@@ -1,7 +1,33 @@
-import logo from "./icons/task.svg";
 import menuIcon from "./icons/menu.svg";
 import taskHomeIcon from "./icons/task_home.svg";
+import supportIcon from "./icons/support.svg";
+import accountIcon from "./icons/account.svg";
+import addIcon from "./icons/add.svg";
+import allToDoIcon from "./icons/all_to_do.svg";
+import starIcon from "./icons/star.svg";
+import dropdownArrowIcon from "./icons/dropdown_arrow.svg";
+import checkboxBlankIcon from "./icons/checkbox_blank.svg";
+import horizontalRuleIcon from "./icons/horizontal_rule.svg";
+import moreIcon from "./icons/more_vert.svg";
+import addTaskIcon from "./icons/add_task.svg";
+import dropdownIcon from "./icons/dropdown.svg";
+
 import "./styles/style.css";
 
 document.getElementById("menu-icon").src = menuIcon;
 document.getElementById("task-icon").src = taskHomeIcon;
+document.getElementById("support-icon").src = supportIcon;
+document.getElementById("account-icon").src = accountIcon;
+document.getElementById("add-icon").src = addIcon;
+document.getElementById("all-to-do-icon").src = allToDoIcon;
+document.getElementById("star-icon").src = starIcon;
+document.getElementById("dropdown-arrow-icon").src = dropdownArrowIcon;
+document.getElementById("checkbox-icon-1").src = checkboxBlankIcon;
+document.getElementById("checkbox-icon-2").src = checkboxBlankIcon;
+document.getElementById("dropdown-arrow-icon").src = dropdownArrowIcon;
+document.getElementById("add-new-list-icon").src = addIcon;
+document.getElementById("dropdown-arrow-icon").src = dropdownArrowIcon;
+document.getElementById("horizontal-rule-icon").src = horizontalRuleIcon;
+document.getElementById("more-icon").src = moreIcon;
+document.getElementById("add-task-icon").src = addTaskIcon;
+document.getElementById("dropdown-icon").src = dropdownIcon;

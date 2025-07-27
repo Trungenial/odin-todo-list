@@ -1,9 +1,10 @@
 :root {
     --homepage: #2476de;
-    --nomal-text: white;
+    --nomal-text: rgb(227, 227, 227);
     --add-task: rgb(168, 199, 250);
     --background: #1b1b1b;
     --list-background: rgba(0, 0, 0, 0.87);
+    --horizontal-rule: #444746;
 }
 
 * {
@@ -12,7 +13,7 @@
 }
 
 html {
-    font-family: "Product Sans", Arial, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: var(--background);
     color: var(--nomal-text);
 }
@@ -21,6 +22,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10px 0 10px 0;
 }
 
 .left-side {
@@ -28,11 +30,22 @@ header {
     align-items: center;
 }
 
+.menu-icon {
+    width: 65px;
+    height: 25px;
+}
+
 .return-homepage {
     display: flex;
     align-items: center;
     color: var(--nomal-text);
     text-decoration: none;
+    font-size: 10px;
+    gap: 5px;
+}
+
+.logo-homepage {
+    width: 35px;
 }
 
 .right-side {
@@ -47,4 +60,12 @@ main {
 
 .list-head {
     display: flex;
+}
+
+.horizontal-rule-icon {
+    width: 50px;
+}
+
+.list-add-to-do {
+    color: var(--add-task);
 }
