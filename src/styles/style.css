@@ -1,15 +1,18 @@
 :root {
     --homepage: #2476de;
-    --nomal-text: rgb(227, 227, 227);
+    --nomal-text: #e3e3e3;
     --add-task: rgb(168, 199, 250);
     --background: #1b1b1b;
+    --background-board: #131314;
     --list-background: rgba(0, 0, 0, 0.87);
     --horizontal-rule: #444746;
+    --light-create: rgb(55, 57, 59);
 }
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -53,9 +56,88 @@ header {
     align-items: center;
 }
 
+.support-icon {
+    width: 65px;
+    height: 30px;
+}
+
+.account-icon {
+    width: 40px;
+    height: 40px;
+}
+
 main {
     display: flex;
     column-gap: 100px;
+}
+
+.left-bar {
+    padding-left: 20px;
+    margin-right: 160px;
+}
+
+.create-box {
+    background-color: var(--light-create);
+    border-radius: 20px;
+    width: 110px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 20px 0 20px 0;
+    color: var(--nomal-text);
+}
+
+.create-box:hover {
+    cursor: pointer;
+}
+
+.add-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.category-list .list {
+    list-style-type: none;
+}
+
+.all-task,
+.have-star {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.list-group-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 20px 0;
+}
+
+.category-list {
+    margin-bottom: 20px;
+}
+
+.category-list > * {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.create-new-list {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.list-container {
+    background-color: var(--background-board);
+    width: 685px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 10px 20px;
 }
 
 .list-head {
@@ -64,6 +146,35 @@ main {
 
 .horizontal-rule-icon {
     width: 50px;
+    align-self: center;
+    margin-top: -15px;
+}
+
+.list-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-top: -15px;
+}
+
+.list-add-to-do {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.list-body {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-foot {
+    display: flex;
+    align-items: center;
 }
 
 .list-add-to-do {
