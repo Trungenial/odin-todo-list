@@ -36,6 +36,7 @@ header {
 .menu-icon {
     width: 65px;
     height: 25px;
+    cursor: pointer;
 }
 
 .return-homepage {
@@ -86,7 +87,7 @@ main {
     justify-content: center;
     padding: 5px;
     margin: 20px 0 20px 0;
-    color: var(--nomal-text);
+    gap: 5px;
 }
 
 .create-box:hover {
@@ -158,7 +159,7 @@ main {
     margin-top: -15px;
 }
 
-.list-add-to-do {
+.list-add-task {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -177,6 +178,6 @@ main {
     align-items: center;
 }
 
-.list-add-to-do {
+.list-add-task {
     color: var(--add-task);
 }
