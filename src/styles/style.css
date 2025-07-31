@@ -28,38 +28,28 @@ header {
     padding: 10px 0 10px 0;
 }
 
-.left-side {
+.header__group {
     display: flex;
     align-items: center;
 }
 
-.menu-icon {
+.header__image {
     width: 65px;
     height: 25px;
     cursor: pointer;
 }
 
-.return-homepage {
+.header__image--large {
+    width: 35px;
+}
+
+.header__link {
     display: flex;
     align-items: center;
     color: var(--nomal-text);
     text-decoration: none;
     font-size: 10px;
     gap: 5px;
-}
-
-.logo-homepage {
-    width: 35px;
-}
-
-.right-side {
-    display: flex;
-    align-items: center;
-}
-
-.support-icon {
-    width: 65px;
-    height: 30px;
 }
 
 .account-icon {
@@ -72,7 +62,7 @@ main {
     column-gap: 100px;
 }
 
-.left-bar {
+.navbar {
     padding-left: 20px;
     margin-right: 160px;
 }

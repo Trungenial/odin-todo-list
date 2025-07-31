@@ -6,22 +6,34 @@
         <title>Tasks</title>
     </head>
     <body>
-        <header>
-            <div class="left-side">
-                <img id="menu-icon" class="menu-icon" alt="Menu" />
-                <a href="#" class="return-homepage">
-                    <img id="task-icon" alt="task" class="logo-homepage" />
-                    <h1>Tasks</h1></a
-                >
+        <header class="header">
+            <div class="header__group">
+                <img
+                    id="nav-menu-toggle"
+                    class="header__img"
+                    alt="Menu toggle"
+                />
+                <a href="#" class="header__link">
+                    <img id="task-icon" alt="Task icon" class="header__img" />
+                    <h1>Tasks</h1>
+                </a>
             </div>
-            <div class="right-side">
-                <img id="support-icon" class="support-icon" alt="support" />
-                <img id="account-icon" class="account-icon" alt="account" />
+            <div class="header__group">
+                <img
+                    id="support-toggle"
+                    class="header__image"
+                    alt="Support toggle"
+                />
+                <img
+                    id="account-toggle"
+                    class="header__image"
+                    alt="Account toggle"
+                />
             </div>
         </header>
-        <main>
-            <nav class="left-bar">
-                <div class="create-box">
+        <div class="main-wrapper">
+            <nav class="sidebar-container">
+                <div class="button">
                     <img alt="add" class="add-icon" id="add-icon" />
                     <span>Create</span>
                 </div>
@@ -86,47 +98,49 @@
                     <span>Create new list</span>
                 </div>
             </nav>
-            <div class="list-board">
-                <div class="list-container">
-                    <img
-                        src=""
-                        alt="Horizontal Rule"
-                        class="horizontal-rule-icon"
-                        id="horizontal-rule-icon"
-                    />
-                    <div class="list-head">
-                        <div class="list-name">My task</div>
+            <main>
+                <div class="list-board">
+                    <div class="list-container">
                         <img
                             src=""
-                            alt="more"
-                            class="more-icon"
-                            id="more-icon"
+                            alt="Horizontal Rule"
+                            class="horizontal-rule-icon"
+                            id="horizontal-rule-icon"
                         />
-                    </div>
-                    <div class="list-add-task">
-                        <img
-                            src=""
-                            alt="add task"
-                            class="add-task-icon"
-                            id="add-task-icon"
-                        />
-                        <span>Add task</span>
-                    </div>
-                    <div class="list-body">
-                        Đã hoàn thành tất cả việc cần làm
-                        <div>Xuất sắc</div>
-                    </div>
-                    <div class="list-foot">
-                        <img
-                            src=""
-                            alt="Dropdown"
-                            class="dropdown-icon"
-                            id="dropdown-icon"
-                        />
-                        <span>Complete ( 122 ) </span>
+                        <div class="list-head">
+                            <div class="list-name">My task</div>
+                            <img
+                                src=""
+                                alt="more"
+                                class="more-icon"
+                                id="more-icon"
+                            />
+                        </div>
+                        <div class="list-add-task">
+                            <img
+                                src=""
+                                alt="add task"
+                                class="add-task-icon"
+                                id="add-task-icon"
+                            />
+                            <span>Add task</span>
+                        </div>
+                        <div class="list-body">
+                            Đã hoàn thành tất cả việc cần làm
+                            <div>Xuất sắc</div>
+                        </div>
+                        <div class="list-foot">
+                            <img
+                                src=""
+                                alt="Dropdown"
+                                class="dropdown-icon"
+                                id="dropdown-icon"
+                            />
+                            <span>Complete ( 122 ) </span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </main>
+            </main>
+        </div>
     </body>
 </html>

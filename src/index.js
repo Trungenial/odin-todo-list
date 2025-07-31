@@ -14,10 +14,10 @@ import dropdownIcon from "./icons/dropdown.svg";
 
 import "./styles/style.css";
 
-document.getElementById("menu-icon").src = menuIcon;
+document.getElementById("nav-menu-toggle").src = menuIcon;
 document.getElementById("task-icon").src = taskHomeIcon;
-document.getElementById("support-icon").src = supportIcon;
-document.getElementById("account-icon").src = accountIcon;
+document.getElementById("support-toggle").src = supportIcon;
+document.getElementById("account-toggle").src = accountIcon;
 document.getElementById("add-icon").src = addIcon;
 document.getElementById("all-tasks-icon").src = allTasksIcon;
 document.getElementById("star-icon").src = starIcon;
