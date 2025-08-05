@@ -18,16 +18,24 @@ document.getElementById("nav-menu-toggle").src = menuIcon;
 document.getElementById("task-icon").src = taskHomeIcon;
 document.getElementById("support-toggle").src = supportIcon;
 document.getElementById("account-toggle").src = accountIcon;
-document.getElementById("add-icon").src = addIcon;
+document.querySelectorAll(".js-sidebar__add-icon").forEach((icon) => {
+    icon.src = addIcon;
+});
 document.getElementById("all-tasks-icon").src = allTasksIcon;
 document.getElementById("star-icon").src = starIcon;
+document.querySelectorAll(".js-checklist__img").forEach((icon) => {
+    icon.src = checkboxBlankIcon;
+});
 document.getElementById("dropdown-arrow-icon").src = dropdownArrowIcon;
-document.getElementById("checkbox-icon-1").src = checkboxBlankIcon;
-document.getElementById("checkbox-icon-2").src = checkboxBlankIcon;
-document.getElementById("dropdown-arrow-icon").src = dropdownArrowIcon;
-document.getElementById("add-new-list-icon").src = addIcon;
-document.getElementById("dropdown-arrow-icon").src = dropdownArrowIcon;
-document.getElementById("horizontal-rule-icon").src = horizontalRuleIcon;
-document.getElementById("more-icon").src = moreIcon;
-document.getElementById("add-task-icon").src = addTaskIcon;
-document.getElementById("dropdown-icon").src = dropdownIcon;
+document.querySelectorAll(".js-horizontal-bar").forEach((icon) => {
+    icon.src = horizontalRuleIcon;
+});
+document.querySelectorAll(".js-more-icon").forEach((icon) => {
+    icon.src = moreIcon;
+});
+document.querySelectorAll(".js-add-task-icon").forEach((icon) => {
+    icon.src = addTaskIcon;
+});
+document.querySelectorAll(".js-dropdown-icon").forEach((icon) => {
+    icon.src = dropdownIcon;
+});

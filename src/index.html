@@ -14,130 +14,257 @@
                     alt="Menu toggle"
                 />
                 <a href="#" class="header__link">
-                    <img id="task-icon" alt="Task icon" class="header__img" />
+                    <img
+                        id="task-icon"
+                        alt="Task icon"
+                        class="header__logo header__img--large"
+                    />
                     <h1>Tasks</h1>
                 </a>
             </div>
             <div class="header__group">
                 <img
                     id="support-toggle"
-                    class="header__image"
+                    class="header__img"
                     alt="Support toggle"
                 />
                 <img
                     id="account-toggle"
-                    class="header__image"
+                    class="header__img header__img--large"
                     alt="Account toggle"
                 />
             </div>
         </header>
         <div class="main-wrapper">
             <nav class="sidebar-container">
-                <div class="button">
-                    <img alt="add" class="add-icon" id="add-icon" />
+                <div class="sidebar__button">
+                    <img
+                        alt="Add"
+                        class="sidebar__add-icon js-sidebar__add-icon"
+                    />
                     <span>Create</span>
                 </div>
 
-                <div class="category">
-                    <div class="all-task">
-                        <img
-                            src=""
-                            alt="All tasks"
-                            id="all-tasks-icon"
-                            class="all-tasks-icon"
-                        />
-                        <span>All tasks</span>
+                <div class="sidebar__filter">
+                    <div class="selection">
+                        <div class="selection__item">
+                            <img
+                                src=""
+                                alt="All tasks"
+                                id="all-tasks-icon"
+                                class="selection__img"
+                            />
+                            <span>All tasks</span>
+                        </div>
+                        <div class="selection__item">
+                            <img
+                                src=""
+                                alt="Starred"
+                                id="star-icon"
+                                class="selection__img"
+                            />
+                            <span>Starred</span>
+                        </div>
                     </div>
-                    <div class="have-star">
-                        <img
-                            src=""
-                            alt="Starred"
-                            id="star-icon"
-                            class="star-icon"
-                        />
-                        <span>Starred</span>
+                    <div class="checklist">
+                        <div class="checklist__header">
+                            <span>List</span>
+                            <img
+                                src=""
+                                alt="Dropdown"
+                                id="dropdown-arrow-icon"
+                                class="checklist__img"
+                            />
+                        </div>
+                        <ul class="checklist__body">
+                            <li class="checklist__item">
+                                <img
+                                    src=""
+                                    alt="checkbox"
+                                    id="checkbox-icon-1"
+                                    class="checklist__img js-checklist__img"
+                                />
+                                <span>Việc cần làm của tôi</span>
+                            </li>
+                            <li class="checklist__item">
+                                <img
+                                    src=""
+                                    alt="checkbox"
+                                    id="checkbox-icon-2"
+                                    class="checklist__img js-checklist__img"
+                                />
+                                <span>Note </span> <span>18 </span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <nav>
-                    <div class="list-group-header">
-                        <span>List</span>
-                        <img
-                            src=""
-                            alt="Dropdown"
-                            id="dropdown-arrow-icon"
-                            class="dropdown-arrow-icon"
-                        />
-                    </div>
-                    <ul class="category-list">
-                        <li class="list">
-                            <img
-                                src=""
-                                alt="checkbox"
-                                id="checkbox-icon-1"
-                                class="check-box-icon"
-                            />
-                            <span>Việc cần làm của tôi</span>
-                        </li>
-                        <li class="list">
-                            <img
-                                src=""
-                                alt="checkbox"
-                                id="checkbox-icon-2"
-                                class="check-box-icon"
-                            />
-                            <span>Note </span> <span>18 </span>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="create-new-list">
+                <div class="sidebar__new-list-button">
                     <img
-                        alt="add"
-                        class="add-new-list-icon"
-                        id="add-new-list-icon"
+                        alt="Add list"
+                        class="sidebar__add-icon js-sidebar__add-icon"
                     />
                     <span>Create new list</span>
                 </div>
             </nav>
-            <main>
-                <div class="list-board">
-                    <div class="list-container">
+            <main class="main-board">
+                <div class="card">
+                    <img
+                        src=""
+                        alt="Horizontal Rule"
+                        class="card__horizontal-bar js-horizontal-bar"
+                    />
+                    <div class="card__header">
+                        <div class="card__name">My task</div>
+                        <img src="" alt="More" class="card__img js-more-icon" />
+                    </div>
+                    <div class="card__add-item">
                         <img
                             src=""
-                            alt="Horizontal Rule"
-                            class="horizontal-rule-icon"
-                            id="horizontal-rule-icon"
+                            alt="add task"
+                            class="card__img js-add-task-icon"
                         />
-                        <div class="list-head">
-                            <div class="list-name">My task</div>
-                            <img
-                                src=""
-                                alt="more"
-                                class="more-icon"
-                                id="more-icon"
-                            />
-                        </div>
-                        <div class="list-add-task">
-                            <img
-                                src=""
-                                alt="add task"
-                                class="add-task-icon"
-                                id="add-task-icon"
-                            />
-                            <span>Add task</span>
-                        </div>
-                        <div class="list-body">
-                            Đã hoàn thành tất cả việc cần làm
-                            <div>Xuất sắc</div>
-                        </div>
-                        <div class="list-foot">
-                            <img
-                                src=""
-                                alt="Dropdown"
-                                class="dropdown-icon"
-                                id="dropdown-icon"
-                            />
-                            <span>Complete ( 122 ) </span>
-                        </div>
+                        <span>Add task</span>
+                    </div>
+                    <div class="card__body">
+                        Đã hoàn thành tất cả việc cần làm
+                        <div>Xuất sắc</div>
+                    </div>
+                    <div class="card__footer">
+                        <img
+                            src=""
+                            alt="Dropdown"
+                            class="card__img js-dropdown-icon"
+                            id="dropdown-icon"
+                        />
+                        <span>Complete (122) </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img
+                        src=""
+                        alt="Horizontal Rule"
+                        class="card__horizontal-bar js-horizontal-bar"
+                    />
+                    <div class="card__header">
+                        <div class="card__name">My task</div>
+                        <img src="" alt="More" class="card__img js-more-icon" />
+                    </div>
+                    <div class="card__add-item">
+                        <img
+                            src=""
+                            alt="add task"
+                            class="card__img js-add-task-icon"
+                        />
+                        <span>Add task</span>
+                    </div>
+                    <div class="card__body">
+                        Đã hoàn thành tất cả việc cần làm
+                        <div>Xuất sắc</div>
+                    </div>
+                    <div class="card__footer">
+                        <img
+                            src=""
+                            alt="Dropdown"
+                            class="card__img js-dropdown-icon"
+                            id="dropdown-icon"
+                        />
+                        <span>Complete (122) </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img
+                        src=""
+                        alt="Horizontal Rule"
+                        class="card__horizontal-bar js-horizontal-bar"
+                    />
+                    <div class="card__header">
+                        <div class="card__name">My task</div>
+                        <img src="" alt="More" class="card__img js-more-icon" />
+                    </div>
+                    <div class="card__add-item">
+                        <img
+                            src=""
+                            alt="add task"
+                            class="card__img js-add-task-icon"
+                        />
+                        <span>Add task</span>
+                    </div>
+                    <div class="card__body">
+                        Đã hoàn thành tất cả việc cần làm
+                        <div>Xuất sắc</div>
+                    </div>
+                    <div class="card__footer">
+                        <img
+                            src=""
+                            alt="Dropdown"
+                            class="card__img js-dropdown-icon"
+                            id="dropdown-icon"
+                        />
+                        <span>Complete (122) </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img
+                        src=""
+                        alt="Horizontal Rule"
+                        class="card__horizontal-bar js-horizontal-bar"
+                    />
+                    <div class="card__header">
+                        <div class="card__name">My task</div>
+                        <img src="" alt="More" class="card__img js-more-icon" />
+                    </div>
+                    <div class="card__add-item">
+                        <img
+                            src=""
+                            alt="add task"
+                            class="card__img js-add-task-icon"
+                        />
+                        <span>Add task</span>
+                    </div>
+                    <div class="card__body">
+                        Đã hoàn thành tất cả việc cần làm
+                        <div>Xuất sắc</div>
+                    </div>
+                    <div class="card__footer">
+                        <img
+                            src=""
+                            alt="Dropdown"
+                            class="card__img js-dropdown-icon"
+                            id="dropdown-icon"
+                        />
+                        <span>Complete (122) </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img
+                        src=""
+                        alt="Horizontal Rule"
+                        class="card__horizontal-bar js-horizontal-bar"
+                    />
+                    <div class="card__header">
+                        <div class="card__name">My task</div>
+                        <img src="" alt="More" class="card__img js-more-icon" />
+                    </div>
+                    <div class="card__add-item">
+                        <img
+                            src=""
+                            alt="add task"
+                            class="card__img js-add-task-icon"
+                        />
+                        <span>Add task</span>
+                    </div>
+                    <div class="card__body">
+                        Đã hoàn thành tất cả việc cần làm
+                        <div>Xuất sắc</div>
+                    </div>
+                    <div class="card__footer">
+                        <img
+                            src=""
+                            alt="Dropdown"
+                            class="card__img js-dropdown-icon"
+                            id="dropdown-icon"
+                        />
+                        <span>Complete (122) </span>
                     </div>
                 </div>
             </main>
