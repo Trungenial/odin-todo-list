@@ -42,9 +42,11 @@ document.querySelectorAll(".js-dropdown-icon").forEach((icon) => {
 
 const menuToggle = document.getElementById("nav-menu-toggle");
 const sidebar = document.getElementById("sidebar-container");
+const mainBoard = document.getElementById("main-board");
 
 menuToggle.addEventListener("click", () => {
-    sidebar.classList.toggle("disable-display");
+    sidebar.classList.toggle("deactive");
+    sidebar.style.visibility = "hidden";
     const isExpanded = menuToggle.getAttribute("aria-expanded") === true;
     menuToggle.setAttribute("aria-expanded", !isExpanded);
 });
