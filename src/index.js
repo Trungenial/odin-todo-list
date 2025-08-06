@@ -39,3 +39,12 @@ document.querySelectorAll(".js-add-task-icon").forEach((icon) => {
 document.querySelectorAll(".js-dropdown-icon").forEach((icon) => {
     icon.src = dropdownIcon;
 });
+
+const menuToggle = document.getElementById("nav-menu-toggle");
+const sidebar = document.getElementById("sidebar-container");
+
+menuToggle.addEventListener("click", () => {
+    sidebar.classList.toggle("disable-display");
+    const isExpanded = menuToggle.getAttribute("aria-expanded") === true;
+    menuToggle.setAttribute("aria-expanded", !isExpanded);
+});

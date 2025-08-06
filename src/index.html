@@ -11,7 +11,9 @@
                 <img
                     id="nav-menu-toggle"
                     class="header__img"
-                    alt="Menu toggle"
+                    role="button"
+                    aria-expanded="true"
+                    aria-controls="sidebar-container"
                 />
                 <a href="#" class="header__link">
                     <img
@@ -36,7 +38,7 @@
             </div>
         </header>
         <div class="main-wrapper">
-            <nav class="sidebar-container">
+            <nav class="sidebar-container" id="sidebar-container">
                 <div class="sidebar__button">
                     <img
                         alt="Add"
@@ -107,6 +109,38 @@
                 </div>
             </nav>
             <main class="main-board">
+                <div class="card">
+                    <img
+                        src=""
+                        alt="Horizontal Rule"
+                        class="card__horizontal-bar js-horizontal-bar"
+                    />
+                    <div class="card__header">
+                        <div class="card__name">My task</div>
+                        <img src="" alt="More" class="card__img js-more-icon" />
+                    </div>
+                    <div class="card__add-item">
+                        <img
+                            src=""
+                            alt="add task"
+                            class="card__img js-add-task-icon"
+                        />
+                        <span>Add task</span>
+                    </div>
+                    <div class="card__body">
+                        Đã hoàn thành tất cả việc cần làm
+                        <div>Xuất sắc</div>
+                    </div>
+                    <div class="card__footer">
+                        <img
+                            src=""
+                            alt="Dropdown"
+                            class="card__img js-dropdown-icon"
+                            id="dropdown-icon"
+                        />
+                        <span>Complete (122) </span>
+                    </div>
+                </div>
                 <div class="card">
                     <img
                         src=""
